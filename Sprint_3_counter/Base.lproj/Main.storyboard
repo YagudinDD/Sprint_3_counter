@@ -25,19 +25,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gz6-Bx-8MP">
-                                <rect key="frame" x="127" y="512" width="212" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gz6-Bx-8MP">
+                                <rect key="frame" x="97" y="490" width="200" height="40"/>
                                 <color key="backgroundColor" red="0.12645316440000001" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Flt-el-JLt"/>
+                                    <constraint firstAttribute="height" constant="40" id="Lfh-Gw-mKJ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="csK-HC-EbO"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Нажми меня"/>
                                 <connections>
-                                    <action selector="ButtonScoreLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ALH-Ty-e7I"/>
+                                    <action selector="buttonScoreLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fR4-Q6-WXl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gz6-Bx-8MP" secondAttribute="bottom" constant="332" id="0uD-pg-NMz"/>
+                            <constraint firstItem="gz6-Bx-8MP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="WeP-Tv-aAd"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonScore" destination="gz6-Bx-8MP" id="TIg-wT-Jo8"/>
